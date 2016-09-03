@@ -1,0 +1,15 @@
+{% include 'header' %}
+
+#import <Foundation/Foundation.h>
+
+@protocol {{ prefix }}{{ module_info.name }}ViewOutput <NSObject>
+
+/**
+ @author {{ developer.name }}
+
+ Desc..
+ */
+ 
+- (void)didTriggerViewReadyEvent;
+
+@end

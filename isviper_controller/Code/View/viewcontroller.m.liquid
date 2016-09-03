@@ -1,0 +1,29 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}ViewController.h"
+#import "{{ prefix }}{{ module_info.name }}ViewOutput.h"
+
+@interface {{ prefix }}{{ module_info.name }}ViewController () <dataDisplayManagerDelegate>
+
+@end
+
+@implementation {{ prefix }}{{ module_info.name }}ViewController
+
+#pragma mark - Life cycle Methods
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	[self.output didTriggerViewReadyEvent];
+}
+
+#pragma mark - {{ prefix }}{{ module_info.name }}ViewInput Methods
+
+- (void)setupInitialState {
+	self.dataDisplayManager.delegate = self;
+}
+
+#pragma mark - dataDisplayManagerDelegate Methods
+
+#pragma mark - Private Methods
+
+@end

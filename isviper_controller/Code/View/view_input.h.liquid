@@ -1,0 +1,15 @@
+{% include 'header' %}
+
+#import <Foundation/Foundation.h>
+
+@protocol {{ prefix }}{{ module_info.name }}ViewInput <NSObject>
+
+/**
+ @author {{ developer.name }}
+
+ Method is setup initial view state
+ */
+ 
+- (void)setupInitialState;
+
+@end

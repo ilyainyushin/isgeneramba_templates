@@ -1,0 +1,16 @@
+{% include 'header' %}
+
+#import <Foundation/Foundation.h>
+
+@protocol dataDisplayManagerDelegate;
+
+@interface {{ prefix }}{{ module_info.name }}DataDisplayManager : NSObject 
+
+@propert (weak, nonatomic) id <dataDisplayManagerDelegate> delegate;
+
+@end
+
+@protocol dataDisplayManagerDelegate <NSObject>
+
+
+@end
