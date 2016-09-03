@@ -12,12 +12,13 @@ code_files:
 - {name: Assembly/Assembly.m, path: Code/Assembly/assembly.m.liquid}
 
 # View layer
+- {name: View/DataDisplayManager/DataDisplayManager.h, path: Code/View/DataDisplayManager/dataDisplayManager.h.liquid}
+- {name: View/DataDisplayManager/DataDisplayManager.m, path: Code/View/DataDisplayManager/dataDisplayManager.m.liquid}
 - {name: View/ViewInput.h, path: Code/View/view_input.h.liquid}
 - {name: View/ViewOutput.h, path: Code/View/view_output.h.liquid}
 - {name: View/ViewController.h, path: Code/View/viewcontroller.h.liquid}
 - {name: View/ViewController.m, path: Code/View/viewcontroller.m.liquid}
-- {name: View/DataDisplayManager/DataDisplayManager.h, path: Code/View/DataDisplayManager/dataDisplayManager.h.liquid}
-- {name: View/DataDisplayManager/DataDisplayManager.m, path: Code/View/DataDisplayManager/dataDisplayManager.m.liquid}
+
 
 # Presenter layer
 - {name: Presenter/ModuleInput.h, path: Code/Presenter/module_input.h.liquid}
