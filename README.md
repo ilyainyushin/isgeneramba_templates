@@ -1,1 +1,1 @@
-# isgeneramba_catalog
+# Ilya Inyushin catalog for Generamba templates
