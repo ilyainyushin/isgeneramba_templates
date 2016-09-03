@@ -5,10 +5,14 @@
 #import "{{ prefix }}{{ module_info.name }}Interactor.h"
 #import "{{ prefix }}{{ module_info.name }}Presenter.h"
 #import "{{ prefix }}{{ module_info.name }}Router.h"
-#import "{{ prefix }}{{ module_info.name }}DataDisplayManager.h"
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
+#import "{{ prefix }}{{ module_info.name }}DataDisplayManager.h"
+/*#import "{{ prefix }}{{ module_info.name }}CellObjectBuilderFactory.h"*/
+
 @interface {{ prefix }}{{ module_info.name }}Assembly ()
+
+/*@property (strong, nonatomic, readonly) {{ prefix }}{{ module_info.name }}CellObjectBuilderFactory* cellObjectBuilderFactory;*/
 
 @end
 
@@ -29,7 +33,8 @@
 - ({{ prefix }}{{ module_info.name }}DataDisplayManager*)dataDisplayManager {
 	return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}DataDisplayManager class]
                           configuration:^(TyphoonDefinition *definition) {
-                              
+                              /*[definition injectProperty:@selector(cellObjectBuilderFactory)
+                                                    with:self.cellObjectBuilderFactory];*/
                           }];
 }
 

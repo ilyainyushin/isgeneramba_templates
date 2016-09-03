@@ -2,11 +2,14 @@
 
 #import <Foundation/Foundation.h>
 
+/*@class {{ prefix }}{{ module_info.name }}CellObjectBuilderFactory;*/
+
 @protocol dataDisplayManagerDelegate;
 
 @interface {{ prefix }}{{ module_info.name }}DataDisplayManager : NSObject 
 
 @property (weak, nonatomic) id <dataDisplayManagerDelegate> delegate;
+/*@property (strong, nonatomic) {{ prefix }}{{ module_info.name }}CellObjectBuilderFactory* cellObjectBuilderFactory;*/
 
 @end
 
