@@ -1,0 +1,11 @@
+{% include 'header' %}
+
+#import <UIKit/UIKit.h>
+#import <Typhoon/Typhoon.h>
+#import "{{ prefix }}{{ module_info.name }}CellObjectBuilderBase.h"
+
+@interface {{ prefix }}{{ module_info.name }}CellObjectBuilderFactory : TyphoonAssembly
+
+- ({{ prefix }}{{ module_info.name }}CellObjectBuilderBase*)cellObjectBuilderBase;
+
+@end

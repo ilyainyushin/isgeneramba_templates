@@ -1,0 +1,11 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}CellObjectBuilderFactory.h"
+
+@implementation {{ prefix }}{{ module_info.name }}CellObjectBuilderFactory
+
+- ({{ prefix }}{{ module_info.name }}CellObjectBuilderBase*)cellObjectBuilderBase {
+	return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}CellObjectBuilderBase class]];
+}
+
+@end
