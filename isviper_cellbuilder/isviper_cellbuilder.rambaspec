@@ -9,11 +9,11 @@ license: "MIT"
 code_files:
 # View layer
 
-- {name: CellObjectBuilder/CellObjectBuilderFactory.h, path: Code/View/CellObjectBuilder/CellObjectBuilderFactory.h.liquid}
-- {name: CellObjectBuilder/CellObjectBuilderFactory.m, path: Code/View/CellObjectBuilder/CellObjectBuilderFactory.m.liquid}
+- {name: View/CellObjectBuilder/CellObjectBuilderFactory.h, path: Code/View/CellObjectBuilder/CellObjectBuilderFactory.h.liquid}
+- {name: View/CellObjectBuilder/CellObjectBuilderFactory.m, path: Code/View/CellObjectBuilder/CellObjectBuilderFactory.m.liquid}
 
-- {name: CellObjectBuilder/CellObjectBuilderBase.h, path: Code/View/CellObjectBuilder/CellObjectBuilderBase.h.liquid}
-- {name: CellObjectBuilder/CellObjectBuilderBase.m, path: Code/View/CellObjectBuilder/CellObjectBuilderBase.m.liquid}
+- {name: View/CellObjectBuilder/CellObjectBuilderBase.h, path: Code/View/CellObjectBuilder/CellObjectBuilderBase.h.liquid}
+- {name: View/CellObjectBuilder/CellObjectBuilderBase.m, path: Code/View/CellObjectBuilder/CellObjectBuilderBase.m.liquid}
 
 # Template dependencies
 dependencies:
