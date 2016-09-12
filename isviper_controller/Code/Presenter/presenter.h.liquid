@@ -3,6 +3,7 @@
 #import "{{ prefix }}{{ module_info.name }}ViewOutput.h"
 #import "{{ prefix }}{{ module_info.name }}InteractorOutput.h"
 #import "{{ prefix }}{{ module_info.name }}ModuleInput.h"
+#import "{{ prefix }}{{ module_info.name }}ModuleOutput.h"
 
 @protocol {{ prefix }}{{ module_info.name }}ViewInput;
 @protocol {{ prefix }}{{ module_info.name }}InteractorInput;
@@ -13,5 +14,6 @@
 @property (weak, nonatomic) id<{{ prefix }}{{ module_info.name }}ViewInput> view;
 @property (strong, nonatomic) id<{{ prefix }}{{ module_info.name }}InteractorInput> interactor;
 @property (strong, nonatomic) id<{{ prefix }}{{ module_info.name }}RouterInput> router;
+@property (weak, nonatomic) id<{{ prefix }}{{ module_info.name }}Output> moduleOutput;
 
 @end

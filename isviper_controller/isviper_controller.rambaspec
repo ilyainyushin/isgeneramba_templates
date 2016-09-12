@@ -26,6 +26,7 @@ code_files:
 
 # Presenter layer
 - {name: Presenter/ModuleInput.h, path: Code/Presenter/module_input.h.liquid}
+- {name: Presenter/ModuleOutput.h, path: Code/Presenter/module_output.h.liquid}
 - {name: Presenter/Presenter.h, path: Code/Presenter/presenter.h.liquid}
 - {name: Presenter/Presenter.m, path: Code/Presenter/presenter.m.liquid}
 
