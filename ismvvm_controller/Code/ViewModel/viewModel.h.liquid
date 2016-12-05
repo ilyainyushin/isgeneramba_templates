@@ -6,9 +6,11 @@
 //  Copyright {{ year }} {{ developer.company }}. All rights reserved.
 //
 
+#import "{{ prefix }}{{ module_info.name }}ViewModelInput.h"
+
 @protocol {{ prefix }}{{ module_info.name }}RouterInput;
 
-@interface {{ prefix }}{{ module_info.name }}ViewModel : NSObject <{{ prefix }}{{ module_info.name }}ViewModuleInput>
+@interface {{ prefix }}{{ module_info.name }}ViewModel : NSObject <{{ prefix }}{{ module_info.name }}ViewModelInput>
 
 @property (strong, nonatomic, readonly) id <{{ prefix }}{{ module_info.name }}RouterInput> router;
 
