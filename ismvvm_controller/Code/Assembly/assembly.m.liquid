@@ -9,7 +9,7 @@
 #import "{{ prefix }}{{ module_info.name }}Assembly.h"
 #import "{{ prefix }}{{ module_info.name }}ViewController.h"
 #import "{{ prefix }}{{ module_info.name }}ViewModelInput.h"
-#import "{{ prefix }}{{ module_info.name }}ViewModule.h"
+#import "{{ prefix }}{{ module_info.name }}ViewModel.h"
 #import "{{ prefix }}{{ module_info.name }}RouterInput.h"
 #import "{{ prefix }}{{ module_info.name }}Router.h"
 //#import "ServiceComponentsFactory.h"
@@ -23,7 +23,7 @@
 }
 
 - (id <{{ prefix }}{{ module_info.name }}ViewModelInput>)viewModel{{ module_info.name }} {
-    return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}ViewModule class] configuration:^(TyphoonDefinition *definition) {
+    return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}ViewModel class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(router) with:[self router{{ module_info.name }}]];
     }];
 }
