@@ -1,0 +1,37 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+#import "{{ prefix }}{{ module_info.name }}Assembly.h"
+#import "{{ prefix }}{{ module_info.name }}ViewController.h"
+#import "{{ prefix }}{{ module_info.name }}ViewModelInput.h"
+#import "{{ prefix }}{{ module_info.name }}ViewModule.h"
+#import "{{ prefix }}{{ module_info.name }}RouterInput.h"
+#import "{{ prefix }}{{ module_info.name }}Router.h"
+//#import "ServiceComponentsFactory.h"
+
+@implementation {{ prefix }}{{ module_info.name }}Assembly
+
+- ({{ prefix }}{{ module_info.name }}ViewController*)view{{ module_info.name }} {
+	return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}ViewController class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(output) with:[self viewModel{{ module_info.name }}]];
+    }];
+}
+
+- (id <{{ prefix }}{{ module_info.name }}ViewModelInput>)viewModel{{ module_info.name }} {
+    return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}ViewModule class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(router) with:[self router{{ module_info.name }}]];
+    }];
+}
+
+- (id <{{ prefix }}{{ module_info.name }}RouterInput>)router{{ module_info.name }} {
+    return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}Router class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(transitionHandler) with:[self view{{ module_info.name }}]];
+    }];
+}
+
+@end

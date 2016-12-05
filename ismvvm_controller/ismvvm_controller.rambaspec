@@ -1,0 +1,34 @@
+# Template information section
+name: "ismvvm_controller"
+summary: "MVVM module template with UIViewController playing as a View."
+author: "Ilya Inyushin"
+version: "1.0"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+
+#Assembly
+- {name: Assembly/Assembly.h, path: Code/Assembly/Assembly.h.liquid}
+- {name: Assembly/Assembly.m, path: Code/Assembly/Assembly.m.liquid}
+
+# View layer
+- {name: View/ViewController.h, path: Code/View/ViewController.h.liquid}
+- {name: View/ViewController.m, path: Code/View/ViewController.m.liquid}
+
+# ViewModel layer
+- {name: ViewModel/ViewModel.h, path: Code/ViewModel/ViewModel.h.liquid}
+- {name: ViewModel/ViewModel.m, path: Code/ViewModel/ViewModel.m.liquid}
+- {name: ViewModel/ViewModelInput.h, path: Code/ViewModel/ViewModelInput.h.liquid}
+
+# Router
+- {name: Router/Router.h, path: Code/Router/Router.h.liquid}
+- {name: Router/Router.m, path: Code/Router/Router.m.liquid}
+- {name: Router/RouterInput.h, path: Code/Router/RouterInput.h.liquid}
+
+# The declarations for test files
+#test_files:
+
+# Template dependencies
+dependencies:
+- Typhoon

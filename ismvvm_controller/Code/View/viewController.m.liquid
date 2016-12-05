@@ -1,0 +1,40 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+#import "{{ prefix }}{{ module_info.name }}ViewController.h"
+#import "{{ prefix }}{{ module_info.name }}ViewModelInput.h"
+
+@interface {{ prefix }}{{ module_info.name }}ViewController ()
+
+@property (strong, nonatomic, readwrite) id <{{ prefix }}{{ module_info.name }}ViewModelInput> output;
+
+@end
+
+@implementation {{ prefix }}{{ module_info.name }}ViewController
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad  {
+	[super viewDidLoad];
+	[self prepareViewInitialState];
+	[self bindUI];
+}
+
+#pragma mark - Bindings
+
+- (void)bindUI {
+	
+}
+
+#pragma mark - Setup View
+
+- (void)prepareViewInitialState {
+	
+}
+
+@end

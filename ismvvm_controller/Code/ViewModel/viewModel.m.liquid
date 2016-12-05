@@ -1,0 +1,28 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+#import "{{ prefix }}{{ module_info.name }}ViewModel.h"
+#import "{{ prefix }}{{ module_info.name }}RouterInput.h"
+
+@interface {{ prefix }}{{ module_info.name }}ViewModel ()
+
+@property (strong, nonatomic, readwrite) id <{{ prefix }}{{ module_info.name }}RouterInput> router;
+
+@end
+
+@implementation {{ prefix }}{{ module_info.name }}ViewModel
+
+- (void)typhoonDidInject {
+   
+}
+
+#pragma mark - Getters
+
+#pragma mark - Navigation
+
+@end

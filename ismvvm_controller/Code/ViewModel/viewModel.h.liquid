@@ -1,0 +1,15 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+@protocol {{ prefix }}{{ module_info.name }}RouterInput;
+
+@interface {{ prefix }}{{ module_info.name }}ViewModel : NSObject <{{ prefix }}{{ module_info.name }}ViewModuleInput>
+
+@property (strong, nonatomic, readonly) id <{{ prefix }}{{ module_info.name }}RouterInput> router;
+
+@end
